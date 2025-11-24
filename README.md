@@ -1,6 +1,7 @@
 # Shirley's Kitchen (Consolidated)
+# Shirley's Kitchen (Consolidated)
 
-This workspace has been consolidated so the Vite + React app lives in the `shirleys-kitchen/` folder as the canonical app root. Duplicate root-level project files have been removed and necessary configs were moved into the app folder.
+This workspace has been consolidated so the Vite + React app lives in the `shirleys-kitchen/` folder as the canonical app root. Duplicate root-level project files were archived under `legacy/` and necessary configs were moved into the app folder.
 
 Quick commands (from the repo root):
 
@@ -28,6 +29,10 @@ npm run preview
 
 What changed:
 - Moved `tailwind.config.js` and `postcss.config.cjs` into `shirleys-kitchen/`.
-- Removed root `package.json`, `vite.config.js`, `index.html`, `app.js`, and duplicate PostCSS/Tailwind configs.
+- Archived root `package.json`, `vite.config.js`, `index.html`, `app.js`, and duplicate PostCSS/Tailwind configs into `legacy/`.
 
-If you want some of the removed content recovered (for example the legacy `app.js` or the root `index.html`), I can restore or archive them into a `legacy/` folder instead of deleting.
+If you want the legacy files restored to the repo root instead of archived, tell me and I will move them back.
+
+Development notes:
+- The canonical app root is `shirleys-kitchen/` — open that folder in your editor for development.
+- Run `npm run lint`, `npm run build`, and `npm run dev` from the `shirleys-kitchen` folder.
